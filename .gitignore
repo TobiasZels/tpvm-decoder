@@ -130,6 +130,7 @@ dist
 .pnp.*
 
 # temp and uploads folder
-temp/*
-uploads/*
-keys/*
+uploads/*/
+keys/*.crt
+keys/*.csr
+keys/*.key
