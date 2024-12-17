@@ -1,0 +1,21 @@
+{
+  "name": "tpvm-com-server",
+  "version": "0.0.1",
+  "description": "tpvm communication server",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Tobias Zels",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "nodemon": "^3.1.7",
+    "progress": "^2.0.3",
+    "socket.io": "^4.7.3",
+    "socketio": "^1.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}

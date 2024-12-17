@@ -1,0 +1,222 @@
+/*  Optional but i like the Font */
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/* CSS */
+
+body{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+
+  .aim_top{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 70%;
+    height: 20%;
+    z-index: 99;
+    border: 12px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .aim_top::before, .aim_top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .aim_top::before {
+    left: 0;
+    width: 20%;
+  }
+  .aim_top::after {
+    right: 0;
+    width: 20%;
+  }
+  
+  .aim_top span {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    font-family: "JetBrains Mono";
+  }
+
+
+  #controlls{
+    visibility:hidden;
+  }
+
+  .roi{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99999999;
+  }
+
+  .aim_bottom{
+    position: absolute;
+    left: 15%;
+    bottom: 25%;
+    width: 70%;
+    height: 20%;
+    z-index: 99;
+    border: 12px solid rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .aim_bottom::before, .aim_bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .aim_bottom::before {
+    left: 0;
+    width: 20%;
+  }
+  .aim_bottom::after {
+    right: 0;
+    width: 20%;
+  }
+
+.video{
+    width: 100%;
+    object-fit: cover;
+}
+
+.controlls{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    bottom: 42px;
+    display: flex;
+    border-radius: 25px 25px 25px 25px;
+    background-color: orange;
+    flex-direction: column;
+}
+.detection{
+    font-size: x-large;
+    font-family: "JetBrains Mono";
+    margin: 0 auto;
+    padding: 16px;
+}
+.close{
+  position: absolute;
+  right: 18px;
+  top: 25%;
+  font-size: x-large;
+  font-family: "JetBrains Mono";
+}
+.study_button{
+    font-size: x-large;
+    font-family: "JetBrains Mono";
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+}
+
+.vd{
+  visibility: visible;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -99999;
+  width: 100%;
+  height: 100%;
+}
+ body{
+  
+ }
+.mainvid{
+  width: 100%;
+  height: 100%;
+
+}

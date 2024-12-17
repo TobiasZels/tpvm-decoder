@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object detector</title>    
+</head>
+<body>
+    <canvas  style="visibility: hidden;" class="mainvid" id="canvasOutput"></canvas>
+    <div class="aim_top">
+        <span> QRcode scannen </span>
+    </div>
+    <div class="aim_bottom"></div>
+
+    <div id="controlls" class="controlls" href="">
+        <div class="detection" id="detection"> Kein Marker gefunden </div>
+        <div id="close" class="close" onclick="closeWindow()">X</div>
+    </div>
+    <canvas  class="roi" id="canvasROI"></canvas>
+
+<video class="vd" muted autoplay playsinline></video>
+<canvas class="" id="canvasFrame"></canvas>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="detection.js" defer></script>
+<link rel="stylesheet" href="main.css">
+<script src="https://docs.opencv.org/4.5.2/opencv.js"></script>
+<script src="https://cdn.roboflow.com/0.2.26/roboflow.js"></script>
+<script src="qr-scanner.umd.min.js"></script>
+<script src="https://cdn.socket.io/4.7.3/socket.io.min.js"></script>
+</body>
+</html>
